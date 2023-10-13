@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    dependencies {
+        //滴滴路由
+        classpath "io.github.didi:drouter-plugin:1.3.3"
+        //gms
+        classpath 'com.google.gms:google-services:4.3.15'
+        //神策
+        classpath 'com.sensorsdata.analytics.android:android-gradle-plugin2:3.5.3'
+        //友盟APM插件
+        classpath "com.umeng.umsdk:apm-plugin:1.0.1"
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.4.2' apply false
+    id 'com.android.library' version '7.4.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+}
+
